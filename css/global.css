@@ -25,5 +25,13 @@ img {
   line-height: 1;
   text-transform: uppercase;
   word-break: break-all; /*quebrar palavra*/
-  max-width: 4ch;
+
+}
+
+@media (max-width: 800px){
+  .subtitulo {
+    font-size: 3rem; /*Diminuindo o tamanho da fonte*/
+    text-transform: capitalize; /*Mudando a fonte, deixando somente a primeira letra maiscula*/
+    max-width: initial;
+  }
 }
