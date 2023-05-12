@@ -3,10 +3,11 @@
   padding: 40px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   gap: 100px;
 
 }
+
 
 .experiencia .subtitulo{
   color:  #e0e0e0
@@ -15,7 +16,7 @@
 .experiencia-texto{
   font-size: 1.5rem;
   line-height:1.33;
-  max-width:40ch;
+  max-width: 50ch;
   margin-bottom: 60px;
   color: #525252
 }
@@ -26,7 +27,6 @@
 
 .empresa {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 20px;
   background: #f5f5f5;
   margin-bottom: 20px;
@@ -61,61 +61,80 @@
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  text-align: center;
+
 }
 
-.empresa-texto {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #525255
+
+
+.empresa-titulo-tecnologias {
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
 }
 
-.empresa-habilidades {
+.empresa img {
+  margin-left: 0.7px;
+  border-radius: 10px;
+
+}
+
+.empresa-habilidades ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-content: start;
-}
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+ 
+
+ }
+
+ .empresa-habilidades li:hover{
+  background: rgba(91, 155, 54, 0.692);
+ }
+
 
 .empresa-habilidades li {
-  font-size: 0.875rem; //Tamanho da fonte
+  font-size: 0.875rem; 
+  display: flex;
   line-height: 1.4;
-  border-radius: 4px; //Deixar as bordas arredondas
-  background: #ffffffff; //Cor do fundo
-  padding: 5px 10px;//Espaçamento interno de 5px up down e 10 left right
+  border-radius: 4px; 
+  background: #ffffffff;
+  margin: 5px;
+  padding: 5px 10px;/*Espaçamento interno de 5px up down e 10 left right*/
 }
 
 @media (max-width: 800px){
   experiencia {
-    grid-template-columns: 1fr; //Quebrando para uma coluna ao chegar nos 800px
-    gap: 40px; //Definindo o espaçamento
+    grid-template-columns: 1fr; /*Quebrando para uma coluna ao chegar nos 800px*/
+    gap: 40px; /*Definindo o espaçamento*/
   }
 
   .experiencia .subtitulo {
-    color: #141414; //Mudando a cor da palavra
+    color: #141414; /*Mudando a cor da palavra*/
   }
 
   .experiencia-texto {
-    font-size: 1.25rem; //Alterando o tamanho da fonte
+    font-size: 1.25rem; /*Alterando o tamanho da fonte*/
   }
 
   .empresa-ano {
     position: initial;
     order: 1;
     width: initial;
-    text-align: left
+    text-align: left;
 
   }
 
   .empresa-ano::before {
     content: "Ano: "; 
-    font-weight: bold; //Coloca a palavra em negrito
-    color: black; //Muda a cor para preta
+    font-weight: bold; /*Coloca a palavra em negrito*/
+    color: black; /*Muda a cor para preta*/
   }
 }
 
 @media (max-width: 400px){
   .empresa{
-    grid-template-columns: 1fr; //Ao reduzir para 400px coloca tudo em uma unica coluna
+    grid-template-columns: 1fr; /*Ao reduzir para 400px coloca tudo em uma unica coluna*/
   }
   
 }

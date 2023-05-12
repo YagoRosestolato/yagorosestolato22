@@ -15,13 +15,18 @@
 
 }
 
-
-.header-menu a {
-  font-size: 1.25rem;
+.header-menu a button {
+  font-size: 1rem;
   line-height: 1.3;
   padding: 10px 20px;
   text-decoration: none;
   color: #141414;
+  border: none;
+  background: transparent;
+}
+
+.header-menu a button:hover{
+  background-color: greenyellow;
 }
 
 @media(max-width: 800px){

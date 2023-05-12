@@ -8,7 +8,7 @@
   padding: 120px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.5fr;
   gap: 100px;
   position: relative;
 }
@@ -42,8 +42,8 @@
 }
 
 .faculdade-lista {
-  display: flex; teste
-  flex-wrap: wrap; /*teste 2*/
+  display: flex; 
+  flex-wrap: wrap; 
   gap: 20px;
   margin-bottom: 60px;
 }
@@ -155,8 +155,4 @@
   font-size: 1.125rem;
   line-height: 1.1;
   margin-bottom: 20px;
-}
-
-.formacao-extra span {
-  
 }
